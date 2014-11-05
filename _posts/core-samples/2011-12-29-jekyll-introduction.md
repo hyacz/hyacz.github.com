@@ -9,13 +9,16 @@ tags : [intro, beginner, jekyll, tutorial]
 This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
 Directly following the intro we'll learn exactly _how_ Jekyll does what it does.
 
+##index
+-------
 
 ##Advance
 
-###Liquid
+###<a name="Liquid">Liquid
 
 jekyll使用的是**Liquid**模版语言相关用法建议参考[wiki](https://github.com/Shopify/liquid/wiki)，这里我们选取的是官方wiki中Liquid for Designers中的例子来进行测试  
-{% highlight html %}
+
+{% highlight liquid %}
 {% raw %}
 Hello {{ 'tobi' | upcase }}  
 Hello tobi has {{ 'tobi' | size }} letters!  
@@ -23,6 +26,7 @@ Hello {{ '*tobi*' | textilize | upcase }}
 Hello {{ 'now' | date: "%Y %h" }}
 {% endraw %}
 {% endhighlight %}
+
 复制上述内容粘贴到示例页`2011-12-29-jekyll-introduction.md`中  
 {% highlight liquid %}
 {% raw %}
@@ -83,44 +87,62 @@ C:/Ruby21-x64/lib/ruby/2.1.0/x64-mingw32
 		from C:/Ruby21-x64/bin/redcloth:23:in `<main>'
 {% endraw %}
 {% endhighlight %}
-提示是加载失败找不到`2.1/redcloth_scan`相关动态库，于是进入到目录`C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/RedCloth-4.2.9/ext`新建一个文件夹`2.1`并且将redcloth_scan里面的东西都复制过来。再次启动就成功了。
+提示是加载失败找不到`2.1/redcloth_scan`相关动态库，于是进入到目录`C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/RedCloth-4.2.9/ext`新建一个文件夹`2.1`并且将`redcloth_scan`里面的东西都复制过来。再次启动就成功了。
 
 ##语法高亮
 
 jekyll原生支持Pygments语法高亮，配置过程如下：
 
-1. **编辑`_config.yml`**
+#####**1.编辑`_config.yml`**
 
-		highlighter: pygments
-		mardown: redcarpet
+	highlighter: pygments
+	mardown: redcarpet
 	
-2. **下载Pygments**
+#####**2.下载Pygments**
 
-		pip install pygments  
+	pip install pygments  
 		
-3. **安装Pygments.rb**
+#####**3.安装Pygments.rb**
 
-		geminstall pygments.rb  
+	geminstall pygments.rb  
 	
-4. **进入项目目录，生成pygments样式**
+#####**4.进入项目目录，生成pygments样式**
 
-		pygmentize -S default -f html > pygments.css
+	pygmentize -S default -f html > pygments.css
 
-5. **在网页中加入生成的样式文件**
+#####**5.在网页中加入生成的样式文件**
 		
-		<link rel="stylesheet" href="/pygments.css">
+	<link rel="stylesheet" href="/pygments.css">
 		
-6. **使用代码高亮**
+#####**6.使用代码高亮**
+		
+	{% raw %}
+	{% highlight html %}
+	<html>
+	<head>
+	<title>Hello</title>
+	</head>
+	<body>
+	<p>Hello world!!!</p>
+	</body>
+	</html>
+	{% endhighlight %}
+	{% endraw %}
 
-{% highlight liquid %}
-{% raw %}
-Hello {{ 'tobi' | upcase }}  
-Hello tobi has {{ 'tobi' | size }} letters!  
-Hello {{ '*tobi*' | textilize | upcase }}  
-Hello {{ 'now' | date: "%Y %h" }}
-{% endraw %}
+{% highlight html %}  
+<html>
+<head>
+<title>Hello</title>
+</head>
+<body>
+<p>Hello world!!!</p>
+</body>
+</html>
 {% endhighlight %}
-	
+		
+>注意：如果是liquid代码还应该在highlight标签中插入一对raw标签来禁用标签处理
+
+
 ## Overview
 
 ### What is Jekyll?
