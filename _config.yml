@@ -1,8 +1,2 @@
-
 highlighter: pygments
-markdown: rdiscount
-
-comments :
-    provider : disqus
-    disqus :
-      short_name : hyacz
+gems: ['jekyll-lunr-js-search']
