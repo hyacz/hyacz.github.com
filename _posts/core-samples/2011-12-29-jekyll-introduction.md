@@ -1,13 +1,85 @@
 ---
 layout: post
 category : lessons
-tagline: "Supporting tagline"
+tagline: "intro, beginner, jekyll, tutorial"
 tags : [intro, beginner, jekyll, tutorial]
 ---
 {% include JB/setup %}
 
 This Jekyll introduction will outline specifically  what Jekyll is and why you would want to use it.
 Directly following the intro we'll learn exactly _how_ Jekyll does what it does.
+
+
+##Advance
+
+###Liquid
+
+jekyll使用的是**Liquid**模版语言相关用法建议参考[wiki](https://github.com/Shopify/liquid/wiki)，这里我们选取的是官方wiki中Liquid for Designers中的例子来进行测试  
+	{% raw %}
+	Hello {{ 'tobi' | upcase }}  
+	Hello tobi has {{ 'tobi' | size }} letters!  
+	Hello {{ '*tobi*' | textilize | upcase }}  
+	Hello {{ 'now' | date: "%Y %h" }}
+	{% endraw %}
+复制上述内容粘贴到示例页`2011-12-29-jekyll-introduction.md`中  
+	{% raw %}
+	...
+	## test
+	
+	Hello {{ 'tobi' | upcase }}  
+	Hello tobi has {{ 'tobi' | size }} letters!  
+	Hello {{ '*tobi*' | textilize | upcase }}  
+	Hello {{ 'now' | date: "%Y %h" }}
+	...
+	{% endraw %}
+在本地启动jekll来看一下效果，这里会提示缺少RedCloth  
+	{% raw %}
+	C:\Users\浩浩\Documents\GitHub\hyacz.github.com>jekyll serve
+	Configuration file: C:/Users/浩浩/Documents/GitHub/hyacz.github.com/_config.yml
+				Source: C:/Users/浩浩/Documents/GitHub/hyacz.github.com
+		   Destination: C:/Users/浩浩/Documents/GitHub/hyacz.github.com/_site
+		  Generating...
+	You are missing a library required for Textile. Please run:
+	  $ [sudo] gem install RedCloth
+	  Liquid Exception: Missing dependency: RedCloth in _posts/core-samples/2011-12-29-jekyll-
+	introduction.md
+				 ERROR: YOUR SITE COULD NOT BE BUILT:
+						------------------------------------
+						Missing dependency: RedCloth
+	{% endraw %}
+按照提示安装了RedCloth之后启动jekll错误依旧，应该是RedCloth自身有问题，运行redcloth.bat来查看具体原因  
+	{% raw %}
+	C:\Ruby21-x64\bin>redcloth.bat
+	C:/Ruby21-x64/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require': cannot l
+	oad such file -- 2.1/redcloth_scan (LoadError)
+	Couldn't load 2.1/redcloth_scan
+	The $LOAD_PATH was:
+	C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/RedCloth-4.2.9/bin/../lib/
+	C:/Ruby21-x64/lib/ruby/gems/2.1.0/extensions/x64-mingw32/2.1.0/RedCloth-4.2.9
+	C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/RedCloth-4.2.9/lib
+	C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/RedCloth-4.2.9/lib/case_sensitive_require
+	C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/RedCloth-4.2.9/ext
+	C:/Ruby21-x64/lib/ruby/site_ruby/2.1.0
+	C:/Ruby21-x64/lib/ruby/site_ruby/2.1.0/x64-msvcrt
+	C:/Ruby21-x64/lib/ruby/site_ruby
+	C:/Ruby21-x64/lib/ruby/vendor_ruby/2.1.0
+	C:/Ruby21-x64/lib/ruby/vendor_ruby/2.1.0/x64-msvcrt
+	C:/Ruby21-x64/lib/ruby/vendor_ruby
+	C:/Ruby21-x64/lib/ruby/2.1.0
+	C:/Ruby21-x64/lib/ruby/2.1.0/x64-mingw32
+			from C:/Ruby21-x64/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `requi
+	re'
+			from C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/RedCloth-4.2.9/lib/redcloth.rb:13:in `
+	<top (required)>'
+			from C:/Ruby21-x64/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `requi
+	re'
+			from C:/Ruby21-x64/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `requi
+	re'
+			from C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/RedCloth-4.2.9/bin/redcloth:4:in `<top
+	 (required)>'
+			from C:/Ruby21-x64/bin/redcloth:23:in `load'
+			from C:/Ruby21-x64/bin/redcloth:23:in `<main>'
+	{% endraw %}
 
 ## Overview
 
