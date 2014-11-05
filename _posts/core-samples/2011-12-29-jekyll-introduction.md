@@ -15,12 +15,14 @@ Directly following the intro we'll learn exactly _how_ Jekyll does what it does.
 ###Liquid
 
 jekyll使用的是**Liquid**模版语言相关用法建议参考[wiki](https://github.com/Shopify/liquid/wiki)，这里我们选取的是官方wiki中Liquid for Designers中的例子来进行测试  
-	{% raw %}
-	Hello {{ 'tobi' | upcase }}  
-	Hello tobi has {{ 'tobi' | size }} letters!  
-	Hello {{ '*tobi*' | textilize | upcase }}  
-	Hello {{ 'now' | date: "%Y %h" }}
-	{% endraw %}
+```c
+{% raw %}
+Hello {{ 'tobi' | upcase }}  
+Hello tobi has {{ 'tobi' | size }} letters!  
+Hello {{ '*tobi*' | textilize | upcase }}  
+Hello {{ 'now' | date: "%Y %h" }}
+```
+{% endraw %}
 复制上述内容粘贴到示例页`2011-12-29-jekyll-introduction.md`中  
 	{% raw %}
 	...
@@ -67,16 +69,11 @@ jekyll使用的是**Liquid**模版语言相关用法建议参考[wiki](https://g
 	C:/Ruby21-x64/lib/ruby/vendor_ruby
 	C:/Ruby21-x64/lib/ruby/2.1.0
 	C:/Ruby21-x64/lib/ruby/2.1.0/x64-mingw32
-			from C:/Ruby21-x64/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `requi
-	re'
-			from C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/RedCloth-4.2.9/lib/redcloth.rb:13:in `
-	<top (required)>'
-			from C:/Ruby21-x64/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `requi
-	re'
-			from C:/Ruby21-x64/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `requi
-	re'
-			from C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/RedCloth-4.2.9/bin/redcloth:4:in `<top
-	 (required)>'
+			from C:/Ruby21-x64/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+			from C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/RedCloth-4.2.9/lib/redcloth.rb:13:in `<top (required)>'
+			from C:/Ruby21-x64/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+			from C:/Ruby21-x64/lib/ruby/2.1.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+			from C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/RedCloth-4.2.9/bin/redcloth:4:in `<top(required)>'
 			from C:/Ruby21-x64/bin/redcloth:23:in `load'
 			from C:/Ruby21-x64/bin/redcloth:23:in `<main>'
 	{% endraw %}
