@@ -110,12 +110,12 @@ a {
   box-shadow: 0 0 0px 4px white, 0 0 4px 4px #eee;
   overflow: hidden;
   display: block; }
-  #avatar:hover {
+  /* #avatar:hover {
     -webkit-animation: spin .35s linear infinite;
     -moz-animation: spin .35s linear infinite;
     -ms-animation: spin .35s linear infinite;
     -o-animation: spin .35s linear infinite;
-    animation: spin .35s linear infinite; }
+    animation: spin .35s linear infinite; } */
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     #avatar {
       background: url(/assets/img/avatar@2X.png);
@@ -232,8 +232,8 @@ a {
   @media screen and (max-width: 585px) {
     #search-form {
       height: 51px;
-      /* display: -webkit-flex;
-      display: flex; */ } }
+      display: -webkit-flex;
+      display: flex;  } }
 
 #mobile-avatar {
   width: 50px;
@@ -325,8 +325,8 @@ a {
   @media screen and (max-width: 585px) {
     .pl__all {
       margin: 4px 0;
-      border-radius: 0; } }
-
+      border-radius: 0; } }  
+	  
 .pl__circle {
   width: .75em;
   height: .75em;
