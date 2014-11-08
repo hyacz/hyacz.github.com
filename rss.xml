@@ -7,8 +7,8 @@ layout: nil
     <title>"hyacz's blog"</title>
     <link>http://hyacz.github.io/</link>
     <atom:link href="http://hyacz.github.io/rss.xml" rel="self" type="application/rss+xml" />
-    <description>"Be curious"</description>
-    <language>UTF-8</language>
+    <description>"Be full of curiosity"</description>
+    <language>zh-cn</language>
     <pubDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
     <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
 
