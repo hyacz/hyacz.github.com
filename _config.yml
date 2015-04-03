@@ -1,4 +1,4 @@
-highlighter: ture
+highlighter: pygments
 gems: ['jekyll-lunr-js-search']
 markdown: kramdown
 permalink: pretty
