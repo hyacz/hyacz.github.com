@@ -1,18 +1,18 @@
 ---
-title: openswan´íÎóÅÅ²é
+title: openswané”™è¯¯æ’æŸ¥
 layout: post
 category : Project
 tags : [openswan,ipsec]
 ---
-ÅªÁËÒ»¸ödigtailoceanµÄvpsÀ´ÓÃ£¬µÚÒ»¼şÊÂÇé¾ÍÊÇ´îÒ»¸övpn£¬½á¹ûpptp±»·âÁË£¬ÓÃ²»ÁË£¬shadowsockÔÚiOSÉÏ²»Ô½ÓüÈ«¾Ö´úÀí²»³É¹¦£¬ÓÚÊÇ¾Í¿ªÊ¼ÅäL2TP/IPSECÁË£¬°²×°openswanÊ±¾Í³öÁËÎÊÌâ£¬DO×Ô´øµÄapt-getµÄÔ´ÀïÃæÃ»ÓĞopenswan£¬¸ÄºÃÁËÕâ¸öÖ®ºó³É¹¦°²×°openswan£¬ÀÏÍâ¸øµÄ½Ì³ÌÊÇ°²×°openswanÒ»Â·»Ø³µ
+å¼„äº†ä¸€ä¸ªdigtailoceançš„vpsæ¥ç”¨ï¼Œç¬¬ä¸€ä»¶äº‹æƒ…å°±æ˜¯æ­ä¸€ä¸ªvpnï¼Œç»“æœpptpè¢«å°äº†ï¼Œç”¨ä¸äº†ï¼Œshadowsockåœ¨iOSä¸Šä¸è¶Šç‹±å…¨å±€ä»£ç†ä¸æˆåŠŸï¼Œäºæ˜¯å°±å¼€å§‹é…L2TP/IPSECäº†ï¼Œå®‰è£…openswanæ—¶å°±å‡ºäº†é—®é¢˜ï¼ŒDOè‡ªå¸¦çš„apt-getçš„æºé‡Œé¢æ²¡æœ‰openswanï¼Œæ”¹å¥½äº†è¿™ä¸ªä¹‹åæˆåŠŸå®‰è£…openswanï¼Œè€å¤–ç»™çš„æ•™ç¨‹æ˜¯å®‰è£…openswanä¸€è·¯å›è½¦
 
 >The openswan installation will ask some questions, this tutorial works with the default answers (just enter through it).
 
-½á¹û¾Í±»¿ÓËÀÁË£¬Ò»Â·»Ø³µÉú³ÉµÄx905µÄÃÜÔ¿ÎŞ·¨±»Ëü×Ô¼º¶ÁÈ¡¡£¡£¡£ÎÒÒ²²»ÖªµÀÎªÊ²Ã´£¬×îºó²éÁËÈÕÖ¾`/var/log/auth.log`£¬·¢ÏÖÈÕÖ¾ÀïÃæÓĞÒ»¶Î»°
+ç»“æœå°±è¢«å‘æ­»äº†ï¼Œä¸€è·¯å›è½¦ç”Ÿæˆçš„x905çš„å¯†é’¥æ— æ³•è¢«å®ƒè‡ªå·±è¯»å–ã€‚ã€‚ã€‚æˆ‘ä¹Ÿä¸çŸ¥é“ä¸ºä»€ä¹ˆï¼Œæœ€åæŸ¥äº†æ—¥å¿—`/var/log/auth.log`ï¼Œå‘ç°æ—¥å¿—é‡Œé¢æœ‰ä¸€æ®µè¯
 
->error loading rsa private key file ¡­¡­
+>error loading rsa private key file â€¦â€¦
 
-ËìÓÖ¹öÈ¥google£¬ÔÚgithubÉÏÕÒµ½Ò»¸ö´ğ°¸
+é‚åˆæ»šå»googleï¼Œåœ¨githubä¸Šæ‰¾åˆ°ä¸€ä¸ªç­”æ¡ˆ
 
 	If you ever see
 	
@@ -25,4 +25,4 @@ tags : [openswan,ipsec]
 	
 	may very well help.
 
-¡£¡£¡£openswanµÄÎÊÌâµ½ÕâÀïÖÕÓÚ¸ã¶¨ÁË£¬µ«ÊÇ»¹ÊÇÃ»ÓĞ½â¾övpnµÄÎÊÌâ¡£
+ã€‚ã€‚ã€‚openswançš„é—®é¢˜åˆ°è¿™é‡Œç»ˆäºæå®šäº†ï¼Œä½†æ˜¯è¿˜æ˜¯æ²¡æœ‰è§£å†³vpnçš„é—®é¢˜
