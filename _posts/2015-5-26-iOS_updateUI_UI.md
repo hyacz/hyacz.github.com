@@ -31,5 +31,6 @@ tags : [xcode,ios,UI]
 	[self performSelectorOnMainThread:@selector(updateUI)
                            withObject:nil
                         waitUntilDone:YES];
-关于iOS的多线程开发还有很多需要学习的地方，这里先记录一下解决方法，其中的原理等到以后在深入研究好了。  
+
+关于iOS的多线程开发还有很多需要学习的地方，这里先记录一下解决方法，其中的原理等到以后在深入研究好了。    
 Reference: [iOS开发- reloadData无效 (子线程更新UI错误)](http://www.2cto.com/kf/201410/342890.html)  
