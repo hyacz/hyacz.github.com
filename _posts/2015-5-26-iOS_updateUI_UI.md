@@ -13,6 +13,7 @@ tags : [xcode,ios,UI]
 	//刷新UI
     [self updateUI];
 	} 
+
 但是数据模型被刷新了，但是更新UI没有效果。后来问了一下别人以及网上百度了一下。 
 
 + 收到`notification`之后其实开了一个子线程去执行`selector`的方法
