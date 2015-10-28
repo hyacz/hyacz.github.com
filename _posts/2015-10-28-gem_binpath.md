@@ -8,9 +8,9 @@ tags : [OSX,ruby,gem]
 
 ###简单粗暴的解决办法
 
->sudo gem install -n /usr/local/bin xxx
->sudo gem update -n /usr/local/bin xxx
->sudo gem uninstall -n /usr/local/bin xxx
+>sudo gem install -n /usr/local/bin xxx  
+>sudo gem update -n /usr/local/bin xxx  
+>sudo gem uninstall -n /usr/local/bin xxx  
 
 这样就可以解决没有权限的问题了。(ps.如果在uninstall的不指定bindir的话是没法删除掉/usr/local/bin下面的可执行文件的  
 
