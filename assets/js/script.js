@@ -24,11 +24,8 @@ var sidebar    = $('#sidebar'),
     button     = $('#icon-arrow');
 
 //click close slidebar
-$(document).mouseup(function(e){
-  var _con = $('#sidebar');   // 设置目标区域
-  if(!_con.is(e.target) && _con.has(e.target).length === 0){ // Mark 1
-    $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
-  }
+$('#post').on('click', function(){
+  $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
 });
 
 // Tags switcher
