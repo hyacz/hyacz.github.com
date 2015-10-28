@@ -10,6 +10,7 @@ if ($(window).width() <= 1280) {
   $('#sidebar').addClass('mobile')
 }
 
+
 // Variables
     tag1       = $('.pl__all'),
     /*tag2       = $('.pl__all'),
@@ -21,6 +22,14 @@ var sidebar    = $('#sidebar'),
     container  = $('#post'),
     content    = $('#pjax'),
     button     = $('#icon-arrow');
+
+//click close slidebar
+$(document).mouseup(function(e){
+  var _con = $('#sidebar');   // 设置目标区域
+  if(!_con.is(e.target) && _con.has(e.target).length === 0){ // Mark 1
+    $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
+  }
+});
 
 // Tags switcher
 var clickHandler = function(k) {
